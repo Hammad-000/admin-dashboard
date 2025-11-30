@@ -21,37 +21,37 @@ function App() {
         <nav className="w-1/5 h-full bg-gray-800 text-white">
           <ul className="flex flex-col p-5 gap-3">
             <li className='text-center'>
-              <Link to="/dashboard" className="p-3 flex justify-center items-center rounded-lg hover:bg-amber-300 border transition duration-300">
+              <Link to="/dashboard" className="p-3 flex justify-center items-center rounded-lg hover:bg-yellow-600 border transition duration-300">
                 Dashboard
                 <MdOutlineDashboard className="ml-2 space-x-1" />
               </Link>
             </li>
             <li>
-              <Link to="/orders" className="flex p-3 rounded-lg justify-center items-center hover:bg-amber-300 border transition duration-300">
+              <Link to="/orders" className="flex p-3 rounded-lg justify-center items-center hover:bg-yellow-600 border transition duration-300">
                 Orders
                 <FaCartShopping className="ml-2 space-x-1" />
                 </Link>
             </li>
             <li>
-              <Link to="/profile" className="flex p-3 rounded-lg justify-center items-center hover:bg-amber-300 border transition duration-300">
+              <Link to="/profile" className="flex p-3 rounded-lg justify-center items-center hover:bg-yellow-600 border transition duration-300">
                 Profile 
                 <FaUserTie className="ml-2 space-x-1" />
                 </Link>
             </li>
             <li>
-              <Link to="/settings" className="flex p-3 rounded-lg justify-center items-center hover:bg-amber-300 border transition duration-300">
+              <Link to="/settings" className="flex p-3 rounded-lg justify-center items-center hover:bg-yellow-600 border transition duration-300">
                 Settings
                  <IoSettingsOutline className="ml-2 space-x-1" />
                  </Link>
             </li>
             <li>
-              <Link to="/login" className=" flex p-3 rounded-lg justify-center items-center hover:bg-amber-300 border transition duration-300">
+              <Link to="/login" className=" flex p-3 rounded-lg justify-center items-center hover:bg-yellow-600 border transition duration-300">
                 Login 
                 <RiLoginCircleFill className="ml-2 space-x-1" />
                 </Link>
             </li>
             <li>
-              <Link to="/signup" className="flex p-3 rounded-lg justify-center items-center hover:bg-amber-300 border transition duration-300">
+              <Link to="/signup" className="flex p-3 rounded-lg justify-center items-center hover:bg-yellow-600  border transition duration-300">
                 Signup 
                <AiOutlineUserAdd className="ml-2 space-x-1" />
                 </Link>
