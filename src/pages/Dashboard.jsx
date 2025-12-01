@@ -13,7 +13,7 @@ import {
 } from 'chart.js';
 import { Line, Bar, Doughnut } from 'react-chartjs-2';
 
-// Register ChartJS components
+
 ChartJS.register(
   CategoryScale,
   LinearScale,
@@ -27,7 +27,7 @@ ChartJS.register(
 );
 
 const Dashboard = () => {
-  // Line Chart Data
+
   const lineChartData = {
     labels: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun'],
     datasets: [
@@ -61,7 +61,7 @@ const Dashboard = () => {
     },
   };
 
-  // Bar Chart Data
+
   const barChartData = {
     labels: ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun'],
     datasets: [
@@ -88,7 +88,6 @@ const Dashboard = () => {
     },
   };
 
-  // Doughnut Chart Data
   const doughnutData = {
     labels: ['Completed', 'Pending', 'Cancelled'],
     datasets: [
@@ -111,7 +110,7 @@ const Dashboard = () => {
 
   return (
     <div className="min-h-screen bg-gray-100">
-      {/* Total Stats - Top */}
+   
       <header className="bg-white shadow">
      
           
@@ -139,12 +138,12 @@ const Dashboard = () => {
             </header>
           
         </header>
-      {/* Main Content */}
+  
       <main className="container mx-auto px-4 py-6">
         <div className="flex flex-col lg:flex-row gap-6">
-          {/* Left Column - Graphs */}
+     
           <div className="lg:w-2/3">
-            {/* Line Chart */}
+     
             <div id="dashboard-graph" className="bg-white shadow rounded-2xl p-6 mb-6">
               <h2 className="text-2xl font-semibold mb-4">Sales Analytics</h2>
               <div className="h-80">
