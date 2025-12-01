@@ -12,6 +12,8 @@ import { RiLoginCircleFill } from "react-icons/ri";
 import { FaCartShopping } from "react-icons/fa6";
 import { FaUserTie } from "react-icons/fa6"; 
 import { AiOutlineUserAdd } from "react-icons/ai";
+import Data from './pages/Data';
+
 
 
 function App() {
@@ -35,6 +37,12 @@ function App() {
             <li>
               <Link to="/profile" className="flex p-3 rounded-lg justify-center items-center hover:bg-yellow-600 border transition duration-300">
                 Profile 
+                <FaUserTie className="ml-2 space-x-1" />
+                </Link>
+            </li>
+            <li>
+              <Link to="/data" className="flex p-3 rounded-lg justify-center items-center hover:bg-yellow-600 border transition duration-300">
+                Data 
                 <FaUserTie className="ml-2 space-x-1" />
                 </Link>
             </li>
@@ -70,6 +78,7 @@ function App() {
             <Route path="/settings" element={<Settings />} />
             <Route path="/login" element={< Login />} />
             <Route path="/signup" element={<Signup />} />
+            <Route path="/data" element={<Data />} />
           </Routes>
         </div>
       </div>

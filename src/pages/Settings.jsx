@@ -3,14 +3,14 @@ import React from 'react';
 const Setting = () => {
     return (
         <div className="flex items-center justify-center min-h-screen bg-gray-100 p-4">
-            {/* Wrapper for the form */}
-            <div className="bg-green-500 p-8 rounded-lg shadow-xl w-full max-w-lg sm:max-w-3xl md:max-w-4xl lg:max-w-5xl">
-                <h2 className="text-3xl font-semibold text-center text-gray-800 mb-8">
+         
+            <div className="bg-gray-800 p-8 rounded-lg shadow-xl w-full max-w-lg sm:max-w-3xl md:max-w-4xl lg:max-w-5xl">
+                <h2 className="text-3xl font-semibold text-center text-white mb-4">
                     Settings
                 </h2>
          
                 <div className="space-y-6">
-                    {/* Account Settings */}
+                
                     <div className="bg-gray-50 p-6 rounded-lg shadow-sm">
                         <h3 className="text-xl font-medium text-gray-800 mb-4">Account Settings</h3>
                         <div className="space-y-4">
@@ -41,7 +41,6 @@ const Setting = () => {
                         </div>
                     </div>
 
-                    {/* Notification Settings */}
                     <div className="bg-gray-50 p-6 rounded-lg shadow-sm">
                         <h3 className="text-xl font-medium text-gray-800 mb-4">Notification Settings</h3>
                         <div className="space-y-4">
@@ -60,7 +59,6 @@ const Setting = () => {
                         </div>
                     </div>
 
-                    {/* Privacy Settings */}
                     <div className="bg-gray-50 p-6 rounded-lg shadow-sm">
                         <h3 className="text-xl font-medium text-gray-800 mb-4">Privacy Settings</h3>
                         <div className="space-y-4">
@@ -81,7 +79,7 @@ const Setting = () => {
                         </div>
                     </div>
 
-                    {/* Save Changes Button */}
+     
                     <div className="flex justify-center mt-6">
                         <button className="bg-gray-600 text-white px-6 py-3 rounded-lg shadow-lg hover:bg-gray-700 focus:outline-none">
                             Save Changes
