@@ -7,12 +7,12 @@ const AddData = () => {
     const [category, setCategory] = useState('');
     const [rating, setRating] = useState('');
     const [error, setError] = useState('');
-    const [success, setSuccess] = useState(''); // State to track success message
+    const [success, setSuccess] = useState(''); 
 
     const handleSubmit = (e) => {
         e.preventDefault();
 
-        // Data validation
+
         if (!name || !description || !price || !category || !rating) {
             setError('All fields are required!');
             setSuccess('');
@@ -50,7 +50,6 @@ const AddData = () => {
         .then((res) => res.json())
         .then((data) => {
             console.log('New product added:', data);
-            // Clear the form
             setName('');
             setDescription('');
             setPrice('');
@@ -67,9 +66,10 @@ const AddData = () => {
     };
 
     return (
-        <div className="flex justify-center">
-            <h1 className="text-3xl font-semibold text-center m-10">Add New Product Data</h1>
-            <form onSubmit={handleSubmit} className="space-y-4 w-80">
+        <div className="justify-center flex p-10">
+            <div className="flex text-center  flex-col gap-4 w-3/6">
+            <h2 className="text-white p-3 rounded-lg bg-gray-800">Add New Product Data</h2>
+            <form onSubmit={handleSubmit} className="space-y-4 ">
                 {error && <p className="text-red-500 text-center">{error}</p>}
                 {success && <p className="text-green-500 text-center">{success}</p>}
                 
@@ -77,7 +77,7 @@ const AddData = () => {
                     <label>Name</label>
                     <input
                         type="text"
-                        className="border p-2 w-full"
+                        className="p-3  border-2 w-full rounded-lg"
                         value={name}
                         onChange={(e) => setName(e.target.value)}
                     />
@@ -87,7 +87,7 @@ const AddData = () => {
                     <label>Description</label>
                     <input
                         type="text"
-                        className="border p-2 w-full"
+                        className="p-3  border-2 w-full rounded-lg"
                         value={description}
                         onChange={(e) => setDescription(e.target.value)}
                     />
@@ -99,17 +99,16 @@ const AddData = () => {
                         type="number"
                         min="0.01"
                         step="0.01"
-                        className="border p-2 w-full"
+                        className="p-3  border-2 w-full rounded-lg"
                         value={price}
                         onChange={(e) => setPrice(e.target.value)}
                     />
                 </div>
-
                 <div>
                     <label>Category</label>
                     <input
                         type="text"
-                        className="border p-2 w-full"
+                        className="p-3  border-2 w-full rounded-lg"
                         value={category}
                         onChange={(e) => setCategory(e.target.value)}
                     />
@@ -121,14 +120,16 @@ const AddData = () => {
                         type="number"
                         min="1"
                         max="5"
-                        className="border p-2 w-full"
+                        className="p-3  border-2 w-full rounded-lg"
                         value={rating}
                         onChange={(e) => setRating(e.target.value)}
                     />
                 </div>
                 
-                <button type="submit" className="bg-blue-500 text-white p-2 w-full mt-4">Add Product</button>
+                <button type="submit" className="bg-yellow-500  border border-black rounded-lg text-white p-2 w-40  mt-4">Add Product</button>
             </form>
+
+                        </div>
         </div>
     );
 };
