@@ -1,0 +1,102 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "title": "Burger1",
+      "description": "Enjoy the crispy chicken fillet in a soft bun with spicy mayo and our signature sauce",
+      "image": "./public/images/burger1.jpg",
+      "price": 100,
+      "category": "Burger",
+      "rating": 5
+    },
+    {
+      "id": 2,
+      "title": "Burger2",
+      "description": "Aromatic Arabian burger with 6 packs of hot shots with KFC famous Vietnamese sauce",
+      "image": "./public/images/burger2.jpg",
+      "price": 200,
+      "category": "Burger",
+      "rating": 4
+    },
+    {
+      "id": 3,
+      "title": "Burger3",
+      "description": "Crispy zinger with crispy rolled into paratha",
+      "image": "./public/images/burger3.jpg",
+      "price": 300,
+      "category": "Burger",
+      "rating": 3
+    },
+    {
+      "id": 4,
+      "title": "Burger4",
+      "description": "Enjoy the crispy chicken fillet in a soft bun with spicy mayo and our signature sauce",
+      "image": "./public/images/burger4.jpg",
+      "price": 350,
+      "category": "Burger",
+      "rating": 2
+    },
+    {
+      "id": 5,
+      "title": "Shawarma1",
+      "description": "Aromatic Arabian shawarma with 6 packs of hot shots with KFC famous Vietnamese sauce",
+      "image": "./public/images/shawarma1.jpg",
+      "price": 300,
+      "category": "Shawarma",
+      "rating": 1
+    },
+    {
+      "id": 6,
+      "title": "Shawarma2",
+      "description": "Crispy zinger with crispy rolled into paratha",
+      "image": "./public/images/shawarma2.jpg",
+      "price": 400,
+      "category": "Shawarma",
+      "rating": 5
+    },
+    {
+      "id": 7,
+      "title": "Shawarma3",
+      "image": "./public/images/shawarma3.jpg",
+      "description": "Enjoy the crispy chicken fillet in a soft bun with spicy mayo and our signature sauce",
+      "price": 500,
+      "category": "Shawarma",
+      "rating": 4
+    },
+    {
+      "id": 8,
+      "title": "Shawarma4",
+      "description": "Aromatic Arabian rice with 6 packs of hot shots with KFC famous Vietnamese sauce",
+      "image": "./public/images/shawarma4.jpg",
+      "price": 800,
+      "category": "Shawarma",
+      "rating": 3
+    },
+    {
+      "id": 9,
+      "title": "Pizza1",
+      "description": "Ditch the delivery! This classic cheese pizza recipe makes a chewy crust, homemade tomato sauce",
+      "image": "./public/images/pizza1.jpg",
+      "price": 999,
+      "category": "Pizza",
+      "rating": 2
+    },
+    {
+      "id": 10,
+      "title": "Pizza2",
+      "description": "Cheese makes everything taste so good! This homemade Four Cheese Pizza recipe will surely tickle",
+      "image": "./public/images/pizza2.jpg",
+      "price": 1300,
+      "category": "Pizza",
+      "rating": 4
+    },
+    {
+      "id": "f0d1",
+      "title": "a",
+      "description": "a",
+      "price": 15000,
+      "category": "Burher",
+      "rating": 2
+    }
+  ]
+}

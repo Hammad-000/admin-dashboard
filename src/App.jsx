@@ -13,13 +13,15 @@ import { FaCartShopping } from "react-icons/fa6";
 import { FaUserTie } from "react-icons/fa6"; 
 import { AiOutlineUserAdd } from "react-icons/ai";
 import Data from './pages/Data';
-
+import AddData from './pages/AddData';
+import { BsDatabaseFillAdd } from "react-icons/bs";
+import { BsDatabase } from "react-icons/bs";
 
 
 function App() {
   return (
     <BrowserRouter>
-      <div className="flex h-screen">
+      <div className="flex max-h-full min-h-screen">
         <nav className="w-1/5 h-full bg-gray-800 text-white">
           <ul className="flex flex-col p-5 gap-3">
             <li className='text-center'>
@@ -43,9 +45,13 @@ function App() {
             <li>
               <Link to="/data" className="flex p-3 rounded-lg justify-center items-center hover:bg-yellow-600 border transition duration-300">
                 Data 
-                <FaUserTie className="ml-2 space-x-1" />
+               <BsDatabase  className="ml-2 space-x-1" />
                 </Link>
             </li>
+                    <Link to="/adddata" className="flex p-3 rounded-lg justify-center items-center hover:bg-yellow-600 border transition duration-300">
+                      Add Data
+                  <BsDatabaseFillAdd className="ml-2 space-x-1" />
+                    </Link>
             <li>
               <Link to="/settings" className="flex p-3 rounded-lg justify-center items-center hover:bg-yellow-600 border transition duration-300">
                 Settings
@@ -64,6 +70,8 @@ function App() {
                <AiOutlineUserAdd className="ml-2 space-x-1" />
                 </Link>
             </li>
+            <li>
+            </li>
 
           </ul>
 
@@ -79,6 +87,7 @@ function App() {
             <Route path="/login" element={< Login />} />
             <Route path="/signup" element={<Signup />} />
             <Route path="/data" element={<Data />} />
+            <Route path="/adddata" element={<AddData />} />
           </Routes>
         </div>
       </div>
