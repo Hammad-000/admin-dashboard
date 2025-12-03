@@ -11,7 +11,7 @@ import {
   Legend,
   ArcElement,
 } from 'chart.js';
-import { Line, Bar, Doughnut } from 'react-chartjs-2';
+import { Line, Bar, Doughnut  , } from 'react-chartjs-2';
 
 
 ChartJS.register(
@@ -33,7 +33,7 @@ const Dashboard = () => {
     datasets: [
       {
         label: 'Sales',
-        data: [65, 59, 80, 81, 56, 55],
+        data: [55, 65, 78, 72, 66, 95],
         borderColor: 'rgb(75, 192, 192)',
         backgroundColor: 'rgba(75, 192, 192, 0.2)',
         tension: 0.1,
@@ -67,7 +67,7 @@ const Dashboard = () => {
     datasets: [
       {
         label: 'Orders',
-        data: [12, 19, 3, 5, 2, 3, 9],
+        data: [11, 10, 12, 13, 15, 19, 18],
         backgroundColor: 'rgba(54, 162, 235, 0.8)',
         borderColor: 'rgba(54, 162, 235, 1)',
         borderWidth: 1,

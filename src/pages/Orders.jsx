@@ -8,7 +8,7 @@ const Order = () => {
                     Orders
                 </h2>
                 <div className="space-y-4">
-                    {/* Add your order list or data here */}
+                
                     <div className="flex justify-between items-center bg-gray-200 p-4 rounded-lg shadow-sm">
                         <span className="text-lg font-medium text-gray-700">Order #001</span>
                         <span className="text-sm text-gray-500">Placed on: 2023-11-30</span>
@@ -17,7 +17,7 @@ const Order = () => {
                         <span className="text-lg font-medium text-gray-700">Order #002</span>
                         <span className="text-sm text-gray-500">Placed on: 2023-11-29</span>
                     </div>
-                    {/* Add more orders as needed */}
+               
                 </div>
             </div>
         </div>
