@@ -2,18 +2,19 @@ import { BrowserRouter, Route, Routes, Link } from 'react-router-dom';
 import Order from './pages/Orders';
 import Profile from './pages/Profile';
 import Dashboard from './pages/Dashboard';
-import './App.css';
 import Settings from './pages/Settings';
 import Login from './pages/Login';
 import Signup from './pages/Signup';
+import AddData from './pages/AddData';
+import Data from './pages/Data';
+import Error from './pages/Error';
+import './App.css';
 import { MdOutlineDashboard } from "react-icons/md";
 import { IoSettingsOutline } from "react-icons/io5";
 import { RiLoginCircleFill } from "react-icons/ri";
 import { FaCartShopping } from "react-icons/fa6";
 import { FaUserTie } from "react-icons/fa6"; 
 import { AiOutlineUserAdd } from "react-icons/ai";
-import Data from './pages/Data';
-import AddData from './pages/AddData';
 import { BsDatabaseFillAdd } from "react-icons/bs";
 import { BsDatabase } from "react-icons/bs";
 
@@ -58,7 +59,7 @@ function App() {
                  <IoSettingsOutline className="ml-2 space-x-1" />
                  </Link>
             </li>
-            <li>
+            {/* <li>
               <Link to="/login" className=" flex p-3 rounded-lg justify-center items-center hover:bg-yellow-600 border transition duration-300">
                 Login 
                 <RiLoginCircleFill className="ml-2 space-x-1" />
@@ -69,9 +70,8 @@ function App() {
                 Signup 
                <AiOutlineUserAdd className="ml-2 space-x-1" />
                 </Link>
-            </li>
-            <li>
-            </li>
+            </li> */}
+            
 
           </ul>
 
@@ -80,6 +80,7 @@ function App() {
 
         <div className="flex-1 p-5 bg-gray-100">
           <Routes>
+            <Route path="/" element={<Dashboard />} />
             <Route path="/dashboard" element={<Dashboard />} />
             <Route path="/orders" element={<Order />} />
             <Route path="/profile" element={<Profile />} />
@@ -88,6 +89,7 @@ function App() {
             <Route path="/signup" element={<Signup />} />
             <Route path="/data" element={<Data />} />
             <Route path="/adddata" element={<AddData />} />
+            <Route path="*" element={<Error />} />
           </Routes>
         </div>
       </div>
