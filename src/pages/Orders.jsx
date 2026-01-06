@@ -4,40 +4,40 @@ import { CheckCircle, Package, Truck, ChevronRight, Calendar, DollarSign } from 
 const Orders = () => {
     const orders = [
         {
-            id: "#001",
+            id: "1",
             date: "2023-11-30",
             status: "Delivered",
             amount: "$89.99",
             items: 3,
             tracking: "TRK123456789",
-            itemsList: ["Wireless Headphones", "Phone Case", "USB Cable"]
+            itemsList: ["Pizza", "Fries", "Shawarma"]
         },
         {
-            id: "#002",
+            id: "2",
             date: "2023-11-29",
             status: "Shipped",
             amount: "$124.50",
             items: 2,
             tracking: "TRK987654321",
-            itemsList: ["Smart Watch", "Screen Protector"]
+            itemsList: ["Burger", "Pasta"]
         },
         {
-            id: "#003",
+            id: "3",
             date: "2023-11-28",
             status: "Processing",
             amount: "$45.75",
             items: 1,
             tracking: "Pending",
-            itemsList: ["Wireless Earbuds"]
+            itemsList: ["Broast , Fires"]
         },
         {
-            id: "#004",
+            id: "4",
             date: "2023-11-25",
             status: "Delivered",
             amount: "$210.00",
             items: 4,
             tracking: "TRK456123789",
-            itemsList: ["Laptop Stand", "Keyboard", "Mouse", "Webcam"]
+            itemsList: ["Burger", "Pasta"]
         }
     ];
 
