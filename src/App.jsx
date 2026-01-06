@@ -92,6 +92,12 @@ const Sidebar = ({ isCollapsed, setIsCollapsed }) => {
           ) : (
             <div className="w-8 h-8 bg-gradient-to-r from-blue-500 to-blue-600 rounded-lg flex items-center justify-center mx-auto">
               <FaChartLine className="text-white text-lg" />
+                 <button
+                onClick={() => setIsCollapsed(!isCollapsed)}
+                className="p-2 rounded-lg hover:bg-blue-800 transition-colors"
+              >
+                <RiArrowLeftRightLine className="" />
+              </button>
             </div>
           )}
         </div>

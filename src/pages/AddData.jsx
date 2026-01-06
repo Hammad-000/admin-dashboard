@@ -21,14 +21,11 @@ const AddData = () => {
     const [isSubmitting, setIsSubmitting] = useState(false);
 
     const categories = [
-        'Electronics',
-        'Clothing',
-        'Books',
-        'Home & Kitchen',
-        'Beauty',
-        'Sports',
-        'Toys',
-        'Food',
+        'Burger',
+        'Pizza',
+        'Fries',
+        'Pasta',
+        'Broast',
         'Other'
     ];
 
