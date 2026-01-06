@@ -237,7 +237,7 @@ const Dashboard = () => {
     labels: ['Completed', 'Pending', 'Cancelled', 'Processing'],
     datasets: [
       {
-        data: [65, 15, 10, 10],
+        data: [65, 18, 2, 15],
         backgroundColor: [
           'rgba(16, 185, 129, 0.9)',
           'rgba(245, 158, 11, 0.9)',
